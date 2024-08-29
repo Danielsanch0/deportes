@@ -1,0 +1,161 @@
+
+
+.header {
+  display: flex;
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: center; /* Centrar el contenido verticalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: #282c34; /* Color de fondo */
+  color: white; /* Color del texto */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el encabezado */
+  border-bottom: 1px solid #ccc; /* Línea de borde inferior */
+}
+
+.header h1 {
+  margin: 0; /* Eliminar margen por defecto */
+  font-size: 2rem; /* Tamaño del texto */
+  font-family: 'Arial', sans-serif; /* Fuente del texto */
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px; /* Reducir espaciado interno en pantallas pequeñas */
+  }
+
+  .header h1 {
+    font-size: 1.5rem; /* Reducir tamaño del texto en pantallas pequeñas */
+  }
+}
+
+.main-content {
+  padding: 20px; /* Espaciado interno */
+  background-color: #f4f4f4; /* Color de fondo claro */
+  color: #333; /* Color del texto */
+  text-align: center; /* Alinear texto al centro */
+  max-width: 800px; /* Ancho máximo para el contenido */
+  margin: 20px auto; /* Centrarse horizontalmente con margen superior e inferior */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+.main-content h2 {
+  margin-top: 0; /* Eliminar margen superior por defecto */
+  font-size: 1.8rem; /* Tamaño del texto del título */
+  color: #444; /* Color del texto del título */
+}
+
+.main-content p {
+  font-size: 1.1rem; /* Tamaño del texto del párrafo */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+  margin: 10px 0; /* Espaciado vertical entre párrafos */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0
+  }
+}
+
+
+
+.footer {
+  background-color: #282c34; /* Color de fondo oscuro */
+  color: white; /* Color del texto blanco */
+  text-align: center; /* Centrar el texto */
+  padding: 20px; /* Espaciado interno */
+  position: fixed; /* Fijar el pie de página en la parte inferior de la ventana */
+  width: 100%; /* Ancho completo */
+  bottom: 0; /* Posicionar en la parte inferior de la ventana */
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para separación */
+  font-family: 'Arial', sans-serif; /* Fuente del texto */
+}
+
+.footer p {
+  margin: 0; /* Eliminar margen por defecto */
+  font-size: 0.9rem; /* Tamaño del texto */
+}
+
+
+.galery {
+  display: flex; /* Utiliza flexbox para disposición horizontal */
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  white-space: nowrap; /* Previene el ajuste de línea */
+  padding: 10px; /* Espaciado interno */
+  background-color: #f8f8f8; /* Fondo claro */
+  
+}
+
+.galery img {
+  width: 350px; /* Ancho fijo para todas las imágenes */
+  height: 250px; /* Alto fijo para todas las imágenes */
+  object-fit: cover; /* Cubre el contenedor, recorta la imagen si es necesario */
+  margin-right: 10px; /* Espacio entre imágenes */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+/* Aside.css */
+.aside-container {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.aside-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aside-menu li {
+  margin: 15px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.aside-menu li:hover {
+  background-color: #ddd;
+}
+/* Contenedor principal para organizar Aside y el contenido */
+.container {
+  display: flex; /* Flexbox para disposición horizontal */
+}
+
+/* Mantén tus estilos anteriores para otros elementos */
+.main-content {
+  padding: 20px; /* Espaciado interno */
+  background-color: #f4f4f4; /* Color de fondo claro */
+  color: #333; /* Color del texto */
+  text-align: center; /* Alinear texto al centro */
+  max-width: 800px; /* Ancho máximo para el contenido */
+  margin: 20px auto; /* Centrarse horizontalmente con margen superior e inferior */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  margin-left: 270px; /* Espacio para el Aside de 250px + margen de 20px */
+}
+
+.galery {
+  display: flex; /* Utiliza flexbox para disposición horizontal */
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  white-space: nowrap; /* Previene el ajuste de línea */
+  padding: 10px; /* Espaciado interno */
+  background-color: #f8f8f8; /* Fondo claro */
+  margin-left: 270px; /* Espacio para el Aside de 250px + margen de 20px */
+}
+
+/* Ajuste adicional para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0; /* Eliminar margen en pantallas pequeñas */
+    padding: 15px; /* Reducir espaciado interno en pantallas pequeñas */
+  }
+
+  .galery {
+    margin-left: 0; /* Eliminar margen en pantallas pequeñas */
+  }
+}
