@@ -3,12 +3,12 @@
 const Aside = () => {
   return (
     <aside className="aside-container">
-      <h2>Menú Lateral</h2>
+      <h2>Menú</h2>
       <ul className="aside-menu">
-        <li>Inicio</li>
-        <li>Acerca de</li>
-        <li>Servicios</li>
-        <li>Contacto</li>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Noticias">Noticias 1</a></li>
+        <li><a href="#Noticias2">Noticias 2</a></li>
+        <li><a href="#Noticias3">Noticias 3</a></li>
       </ul>
     </aside>
   );

@@ -24,12 +24,13 @@ const Galeria = () => {
     }, []);
       return (
         <div className="galery" ref={galleryRef}>
-          <img src="public/images/img1.jpg"></img>
-      <img src="public/images/img2.jpg"></img>
-      <img src="public/images/img3.jpg"></img>
-      <img src="public/images/img4.jpg"></img>
-      <img src="public/images/img5.png"></img>
-          {/* Agrega más imágenes según sea necesario */}
+    <img src="public/images/Mund_femen.jpg"></img>
+      <img src="public/images/tecni_Nacio.jpeg"></img>
+      <img src="public/images/ligaBetplay.jpg"></img>
+      <img src="public/images/sele-Colombia.jpg"></img>
+      <img src="public/images/lucho.webp"></img>
+      <img src="public/images/Mund_femen.jpg"></img>
+          
         </div>
       );
     };

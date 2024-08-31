@@ -1,7 +1,7 @@
 function Header(){
     return(
     <header className="header">
-        <h1>Escuela de Futbol Daniels</h1>
+        <h1 id="Inicio">Noticias Deportivas DNS</h1>
     
     </header>
     )
